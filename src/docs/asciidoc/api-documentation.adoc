@@ -1,0 +1,28 @@
+= *REST API Documentation*
+React & Vue 강의시 사용할 공용 API 문서
+:toc:
+:toc-title: 목차
+
+== 회원 서비스
+
+회원 가입과 로그인 기능을 제공합니다.
+
+=== 회원가입: /member/join
+
+* HTTP 요청
+include::build/generated-snippets/member/join/http-request.adoc[]
+include::build/generated-snippets/member/join/request-fields.adoc[]
+
+* HTTP 응답
+include::build/generated-snippets/member/join/http-response.adoc[]
+include::build/generated-snippets/member/join/response-fields.adoc[]
+
+=== 로그인: /member/login
+
+* HTTP 요청
+include::build/generated-snippets/member/login/http-request.adoc[]
+include::build/generated-snippets/member/login/form-parameters.adoc[]
+
+* HTTP 응답
+include::build/generated-snippets/member/login/http-response.adoc[]
+include::build/generated-snippets/member/login/response-fields.adoc[]
