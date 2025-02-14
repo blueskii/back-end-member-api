@@ -1,15 +1,6 @@
 # Base image로 OpenJDK 17 사용
 FROM openjdk:17
 
-# root 사용자로 변경
-USER root
-
-# Docker CLI 설치
-RUN apt-get update && apt-get install -y docker.io
-
-# 설치 후 Jenkins 사용자로 변경
-USER jenkins
-
 # 빌드시 매개값으로 전달된 버전 정보 (ARG는 컨테이너 런타임에는 사용 불가)
 ARG VERSION
 
