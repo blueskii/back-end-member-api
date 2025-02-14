@@ -16,13 +16,13 @@ LABEL maintainer="YongKwon Shin<blueskii@naver.com>" \
 # 컨테이너 내부에서 사용할 환경 변수 설정
 ENV APP_HOME /app
 
-# 컨테이너가 사용할 포트 지정 (하지만 포트를 개방하지는 않음)
+# 컨테이너 내부에서 사용할 포트 지정 (하지만 포트를 개방하지는 않음)
 # 실행 시 docker run -p 80:80 옵션을 사용해야 실제로 외부 접근 가능
 EXPOSE 80
 
-# 컨테이너 내부에서 작업 디렉터리 설정 (이후 명령어 실행 위치)
+# 컨테이너 내부의 작업 디렉터리 설정 (이후 명령어 실행 위치)
 WORKDIR $APP_HOME
 
-# 컨테이너 내부에서 자동 실행 명령어 설정 (Spring Boot 애플리케이션 실행)
+# 컨테이너 내부의 자동 실행 명령어 설정 (Spring Boot 애플리케이션 실행)
 ENTRYPOINT ["java"]
 CMD ["-jar", "back-end-member-api.jar"]
