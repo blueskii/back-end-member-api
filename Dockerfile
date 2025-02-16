@@ -1,4 +1,4 @@
-# Base image로 OpenJDK 17 사용 
+# Base image로 OpenJDK 17 사용
 FROM openjdk:17
 
 # 빌드시 매개값으로 전달된 버전 정보 (ARG는 컨테이너 런타임에는 사용 불가)
