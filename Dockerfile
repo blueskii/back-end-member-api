@@ -8,6 +8,8 @@ ARG VERSION
 COPY build/libs/back-end-member-api-0.0.1-SNAPSHOT.jar /app/back-end-member-api.jar
 
 # 이미지 메타데이터 추가
+# Docker Hub에서는 볼 수 없으며, 이미지를 pull 한 후에,
+# sudo docker inspect <IMAGE ID>를 통해 볼 수 있음
 LABEL maintainer="YongKwon Shin<blueskii@naver.com>" \
       title="back-end-member-api" \
       version="$VERSION" \
