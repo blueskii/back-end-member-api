@@ -42,7 +42,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
-//Lombok의 @Slf4j는 Gralde Test에는 출력되지 않고, JUnit Test에만 출력됨(사용하지 말것)
+//Lombok의 @Slf4j는 Gralde Test에는 출력되지 않고, JUnit Test에만 출력됨(사용하지 말것) 
 @SpringBootTest
 @ExtendWith({RestDocumentationExtension.class, SpringExtension.class})
 class BackEndServiceApplicationTests {
