@@ -1,4 +1,4 @@
-= *REST API Documentation2*
+= *REST API Documentation1*
 React & Vue 강의시 사용할 공용 API 문서
 :toc:
 :toc-title: 목차
